@@ -1,7 +1,7 @@
 # ice
 像冰一般的~ 
 
-ps：目前暂不开源,以后可能会传上去
+ps：目前暂不开源,代码copy了很多，写的比较烂，没时间维护,以后可能会传上去
 
 弱鸡的扫描器探测探针，主要用于内网探测端口扫描相关信息，模拟mysql,vnc,rmi等协议。
 
@@ -32,7 +32,7 @@ nmap指纹识别结果
 mysql反制读取文件
 ![Image text](https://github.com/IceMoon1995/ice/blob/master/img/mysql%E5%8F%8D%E5%88%B6.jpg)
 
-mysql蜜罐支持yml配置，主要可以修改file_list以配置需要读取文件信息
+mysql蜜罐支持yml配置，主要可以修改file_list以配置需要读取文件信息(mconfig.yaml放在同一个目录下，自动读取配置，否则则使用默认配置)
 ![Image text](https://github.com/IceMoon1995/ice/blob/master/img/mconfig%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF.jpg)
 
 ## 参数说明
